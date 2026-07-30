@@ -102,6 +102,26 @@
     .grid { grid-template-columns: repeat(2, 1fr) !important; }
     .card img { aspect-ratio: 7 / 3; }
   }
+
+  /* A3 — larger sheet: scale type up and let images grow so the page fills.
+     Page width in print media = the sheet's width, so A3 is detectable. */
+  @media print and (orientation: landscape) and (min-width: 350mm),
+         print and (orientation: portrait) and (min-width: 250mm) {
+    header.site { margin: 0 0 5mm; padding-bottom: 3mm; }
+    header.site h1 { font-size: 22pt; margin-bottom: 2mm; }
+    header.site p { font-size: 10.5pt; line-height: 1.35; }
+    .grid { gap: 6mm; margin: 0 0 5mm; }
+    .card img { aspect-ratio: 2 / 1 !important; }
+    .card-body { padding: 3.5mm 4mm; gap: 1.8mm; }
+    .card-title { font-size: 15pt; margin: 0 0 1mm; }
+    .card-body p { font-size: 10.5pt; line-height: 1.35; }
+    .tags { gap: 2mm; padding-top: 2.5mm; }
+    .tag { font-size: 8pt; padding: 1mm 2.5mm; }
+    main > p[style] { font-size: 9pt !important; margin: 0 0 3mm !important; }
+    footer { padding-top: 3mm; font-size: 10pt; }
+    .author-links a { width: 8mm; height: 8mm; }
+    .author-links svg { width: 4.5mm; height: 4.5mm; }
+  }
 </style>
 </head>
 <body>
