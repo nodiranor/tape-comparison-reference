@@ -107,20 +107,24 @@
      Page width in print media = the sheet's width, so A3 is detectable. */
   @media print and (orientation: landscape) and (min-width: 350mm),
          print and (orientation: portrait) and (min-width: 250mm) {
-    header.site { margin: 0 0 5mm; padding-bottom: 3mm; }
-    header.site h1 { font-size: 22pt; margin-bottom: 2mm; }
-    header.site p { font-size: 10.5pt; line-height: 1.35; }
-    .grid { gap: 6mm; margin: 0 0 5mm; }
-    .card img { aspect-ratio: 2 / 1 !important; }
-    .card-body { padding: 3.5mm 4mm; gap: 1.8mm; }
-    .card-title { font-size: 15pt; margin: 0 0 1mm; }
-    .card-body p { font-size: 10.5pt; line-height: 1.35; }
-    .tags { gap: 2mm; padding-top: 2.5mm; }
-    .tag { font-size: 8pt; padding: 1mm 2.5mm; }
-    main > p[style] { font-size: 9pt !important; margin: 0 0 3mm !important; }
-    footer { padding-top: 3mm; font-size: 10pt; }
-    .author-links a { width: 8mm; height: 8mm; }
-    .author-links svg { width: 4.5mm; height: 4.5mm; }
+    header.site { margin: 0 0 4mm; padding-bottom: 2.5mm; }
+    header.site h1 { font-size: 21pt; margin-bottom: 1.5mm; }
+    header.site p { font-size: 11pt; line-height: 1.3; }
+    .grid { gap: 5mm; margin: 0 0 4mm; }
+    .card img { aspect-ratio: 3 / 1 !important; }
+    .card-body { padding: 3mm 3.5mm; gap: 1.5mm; }
+    .card-title { font-size: 16pt; margin: 0 0 1mm; }
+    .card-body p { font-size: 11.5pt; line-height: 1.3; }
+    .tags { gap: 2mm; padding-top: 2mm; }
+    .tag { font-size: 9pt; padding: 1mm 2.5mm; }
+    main > p[style] { font-size: 9.5pt !important; margin: 0 0 2.5mm !important; }
+    footer { padding-top: 2.5mm; font-size: 10pt; }
+    .author-links a { width: 7mm; height: 7mm; }
+    .author-links svg { width: 4mm; height: 4mm; }
+  }
+  /* A3 portrait has more vertical room than landscape — slightly taller images */
+  @media print and (orientation: portrait) and (min-width: 250mm) {
+    .card img { aspect-ratio: 5 / 2 !important; }
   }
 </style>
 </head>
