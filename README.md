@@ -1,4 +1,4 @@
-# Automotive Wire Harness Tape Comparison
+# Automotive Wire Harness Tape Comparison | 汽车线束胶带对比
 
 A visual, engineering-focused reference comparing the six tape constructions most commonly used to wrap automotive wire harnesses — for picking the right wrap without digging through multiple supplier datasheets.
 
@@ -51,6 +51,10 @@ A visual, engineering-focused reference comparing the six tape constructions mos
 
 *Values shown are typical reference ranges for common automotive-grade constructions and vary by manufacturer and part number — verify against the supplier datasheet before specifying. Ratings use a 5-point scale (●●●●● = highest).*
 
+## 中文
+
+打开 [`index.html`](./index.html) 后点击右上角的「中文」按钮即可切换为简体中文界面 — 涵盖植绒胶带、无纺布胶带、PVC胶带、泡棉胶带、毛毡胶带、布基胶带（棉纱胶带）的完整对比，方便搜索「汽车线束胶带」「线束包扎胶带」相关内容。
+
 ## Also available as a standalone page
 
 [`index.html`](./index.html) — the same comparison as a self-contained web page. Open it directly in a browser, or enable GitHub Pages (Settings → Pages → Deploy from branch → `main` / root) for a shareable URL.
@@ -67,3 +71,13 @@ GPL-3.0 — see [`LICENSE`](./LICENSE).
 
 **N. Anorboev** — JinTing Automobile Electric LLC
 [GitHub](https://github.com/nodiranor) · [LinkedIn](https://www.linkedin.com/in/naua/)
+
+## Clone or use as-is
+
+Repo: https://github.com/nodiranor/tape-comparison-reference
+
+```
+git clone https://github.com/nodiranor/tape-comparison-reference.git
+```
+
+Or just download `index.html` + `images/` directly and drop them into your own site — no build step required.
