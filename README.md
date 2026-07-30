@@ -69,7 +69,7 @@ GPL-3.0 — see [`LICENSE`](./LICENSE).
 
 ---
 
-**N. Anorboev** — JinTing Automobile Electric LLC
+**N. Anorboev** — R&D and Localization Specialist Engineer, Wiring Harness Industry
 [GitHub](https://github.com/nodiranor) · [LinkedIn](https://www.linkedin.com/in/naua/)
 
 ## Clone or use as-is
