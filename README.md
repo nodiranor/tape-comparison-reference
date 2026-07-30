@@ -62,3 +62,8 @@ Specification values are typical reference ranges and vary by manufacturer and p
 ## License
 
 GPL-3.0 — see [`LICENSE`](./LICENSE).
+
+---
+
+**N. Anorboev** — JinTing Automobile Electric LLC
+[GitHub](https://github.com/nodiranor) · [LinkedIn](https://www.linkedin.com/in/naua/)
