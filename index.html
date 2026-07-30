@@ -79,27 +79,35 @@
   body:not(.zh) .lang-zh { display: none; }
 
   @media print {
+    html, body { height: auto; }
     .lang-switch { display: none !important; }
     * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     body { background: #fff; }
-    .wrap { max-width: 100%; margin: 0; padding: 8mm 10mm; }
-    header.site { margin-bottom: 14px; padding-bottom: 10px; }
-    header.site h1 { font-size: 22px; }
-    header.site p { font-size: 11.5px; }
-    .grid { grid-template-columns: repeat(3, 1fr) !important; gap: 6mm; margin: 14px 0 20px; }
+    .wrap { max-width: 100%; margin: 0; padding: 4mm 6mm; zoom: 0.8; transform-origin: top left; }
+    header.site { margin-bottom: 8px; padding-bottom: 6px; }
+    header.site h1 { font-size: 19px; margin-bottom: 3px; }
+    header.site p { font-size: 10px; line-height: 1.3; }
+    .grid { grid-template-columns: repeat(3, 1fr) !important; gap: 4mm; margin: 8px 0 10px; }
     .card { flex-direction: column !important; break-inside: avoid; page-break-inside: avoid; }
-    .card img { width: 100% !important; height: 32mm !important; border-right: none !important; border-bottom: 1px solid var(--color-divider) !important; }
-    .card-body { padding: 7px 9px; }
-    .card-title { font-size: 13px; }
-    .card-body p { font-size: 9px; }
-    .tag { font-size: 8px; padding: 2px 6px; }
-    table { font-size: 10px; margin: 10px 0 16px; }
-    th, td { padding: 5px 7px; }
-    footer { padding-top: 8px; }
-    @page { margin: 10mm; }
+    .card img { width: 100% !important; height: 24mm !important; border-right: none !important; border-bottom: 1px solid var(--color-divider) !important; }
+    .card-body { padding: 5px 7px; gap: 3px; }
+    .card-title { font-size: 11px; margin-bottom: 2px; }
+    .card-body p { font-size: 8px; line-height: 1.25; }
+    .tags { gap: 3px; padding-top: 4px; }
+    .tag { font-size: 7px; padding: 1.5px 5px; }
+    h2 { font-size: 13px; margin: 6px 0 4px; }
+    table { font-size: 8.5px; margin: 4px 0 8px; }
+    th, td { padding: 3px 5px; }
+    p[style] { font-size: 8px !important; margin: 4px 0 !important; }
+    footer { padding-top: 6px; font-size: 9px; }
+    .author-links a { width: 22px; height: 22px; }
+    .author-links svg { width: 12px; height: 12px; }
+    @page { margin: 8mm; }
   }
   @media print and (orientation: portrait) {
+    .wrap { zoom: 0.62; }
     .grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .card img { height: 26mm !important; }
   }
 </style>
 </head>
@@ -119,6 +127,11 @@
       <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="10" height="5"/><path d="M4.5 6V2.5h7V6M4.5 11v2.5h7V11"/></svg>
       <span>Print (A4 / A3)</span>
     </button>
+    <span class="sep"></span>
+    <a href="https://github.com/nodiranor/tape-comparison-reference" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;border:1px solid var(--color-divider);padding:6px 14px;font-size:13px;text-decoration:none;color:var(--color-text);">
+      <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span>View on GitHub</span>
+    </a>
   </div>
 
   <header class="site">
